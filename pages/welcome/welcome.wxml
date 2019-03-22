@@ -1,0 +1,7 @@
+<view class="welcome-wrapper">
+  <image class="user-avatar" src="/images/avatar.png"></image>
+  <text class="user-name">Hello, D_Brick</text>
+  <view class="moto">
+    <text>欢迎来到小程序</text>
+  </view>
+</view>
