@@ -10,51 +10,22 @@
       <image class="swiper-item-img" src="/images/iqiyi.png"></image>
     </swiper-item>
   </swiper>
-  <view class="post-list">
+
+  <block wx:for="{{post_key}}" wx:key="{{index}}">
     <view class="post-item">
       <view class="post-avatar-date">
-        <image class="post-avatar-img" src="/images/avatar/1.png"></image>
-        <text class="post-date">Sep 18 2016</text>
+        <image class="post-avatar-img" src="{{item.avatar}}"></image>
+        <text class="post-date">{{item.date}}</text>
       </view>
-      <text class="post-title">正是虾肥蟹壮时</text>
-      <image class="post-content-img" src="/images/post/crab.png"></image>
-      <text class="post-content-text">菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，</text>
+      <text class="post-title">{{item.title}}</text>
+      <image class="post-content-img" src="{{item.imgSrc}}"></image>
+      <text class="post-content-text">{{item.content}}</text>
       <view class="post-like-view">
         <image class="post-like-img" src="/images/icon/chat.png"></image>
-        <text class="post-like-text">96</text>
+        <text class="post-like-text">{{item.collection}}</text>
         <image class="post-like-img" src="/images/icon/view.png"></image>
-        <text class="post-like-text">112</text>
+        <text class="post-like-text">{{item.reading}}</text>
       </view>
     </view>
-    <view class="post-item">
-      <view class="post-avatar-date">
-        <image class="post-avatar-img" src="/images/avatar/1.png"></image>
-        <text class="post-date">Sep 18 2016</text>
-      </view>
-      <text class="post-title">正是虾肥蟹壮时</text>
-      <image class="post-content-img" src="/images/post/crab.png"></image>
-      <text class="post-content-text">菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，</text>
-      <view class="post-like-view">
-        <image class="post-like-img" src="/images/icon/chat.png"></image>
-        <text class="post-like-text">96</text>
-        <image class="post-like-img" src="/images/icon/view.png"></image>
-        <text class="post-like-text">112</text>
-      </view>
-    </view>
-    <view class="post-item">
-      <view class="post-avatar-date">
-        <image class="post-avatar-img" src="/images/avatar/1.png"></image>
-        <text class="post-date">Sep 18 2016</text>
-      </view>
-      <text class="post-title">正是虾肥蟹壮时</text>
-      <image class="post-content-img" src="/images/post/crab.png"></image>
-      <text class="post-content-text">菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，</text>
-      <view class="post-like-view">
-        <image class="post-like-img" src="/images/icon/chat.png"></image>
-        <text class="post-like-text">96</text>
-        <image class="post-like-img" src="/images/icon/view.png"></image>
-        <text class="post-like-text">112</text>
-      </view>
-    </view>
-  </view>
+  </block>
 </view>

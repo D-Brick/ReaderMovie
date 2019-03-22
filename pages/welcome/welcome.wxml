@@ -1,7 +1,7 @@
 <view class="welcome-wrapper">
   <image class="user-avatar" src="/images/avatar/1.png"></image>
   <text class="user-name">Hello, D_Brick</text>
-  <view class="moto">
+  <view class="moto" bind:tap="onTap">
     <text>欢迎来到小程序</text>
   </view>
 </view>
