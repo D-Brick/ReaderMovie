@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  width: 100%;
+  height: 460rpx;
+}
+
+.author-date {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar {
+  width: 65rpx;
+  height: 65rpx;
+  margin: 10px;
+}
+
+.name {
+  font-size: 30rpx;
+  margin-right: 10px;
+}
+
+.const-text {
+  margin-right: 15px;
+}
+
+.title {
+  font-size: 35rpx;
+  font-weight: 600;
+  margin: 5px 15px;
+}
+
+.tools {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 20px;
+}
+
+.horizon {
+  z-index: -1;
+  position: absolute;
+  top: 45rpx;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: black;
+}
+
+.content {
+  margin-left: 15px;
+  margin-right: 15px;
+  line-height: 25px;
+  letter-spacing: 2.6px;
+}
